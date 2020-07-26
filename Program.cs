@@ -13,6 +13,10 @@ namespace logical_exercise
     {
         public static void Main(string[] args)
         {
+            Factorial f = new Factorial();
+            f.Run();
+            QuickSort quick = new QuickSort();
+            quick.Run();
             int option = 0;
             int i_option = 0;
             int ii_option = 0;
@@ -179,6 +183,10 @@ namespace logical_exercise
                                 case 4:
                                     IteratorTest iterator = new IteratorTest();
                                     iterator.Run();
+                                break;
+                                case 5:
+                                    StateTest state = new StateTest();
+                                    state.Run();
                                 break;
                                 default:
                                 break;
