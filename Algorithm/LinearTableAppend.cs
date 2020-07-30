@@ -16,7 +16,7 @@ namespace logical_exercise.Algorithm
             tempArray[scores.Length] = 75;
             scores = tempArray;
             Console.WriteLine(String.Join(',', scores));
-
+            Console.Read();
         }
 
 

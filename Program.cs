@@ -13,10 +13,10 @@ namespace logical_exercise
     {
         public static void Main(string[] args)
         {
-            Factorial f = new Factorial();
-            f.Run();
-            QuickSort quick = new QuickSort();
-            quick.Run();
+            // Factorial f = new Factorial();
+            // f.Run();
+            // QuickSort quick = new QuickSort();
+            // quick.Run();
             int option = 0;
             int i_option = 0;
             int ii_option = 0;
@@ -26,16 +26,43 @@ namespace logical_exercise
             Console.WriteLine("2.-DataStructures");
             Console.WriteLine("3.-Design Patterns");
             option = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine($"Value pressed: {option}");
-            Console.WriteLine($"Example {DataInfo.example}");
             switch (option)
             {
                 case 1:
                     Console.WriteLine("Algorithm");
+                    Console.WriteLine("1.-Linear Table");
+                    Console.WriteLine("2.-Linear Table Append");
+                    Console.WriteLine("3.-Linear Table Delete");
+                    Console.WriteLine("4.-Linear Table Insert");
+                    Console.WriteLine("5.-Linear Table Search");
                     i_option = Convert.ToInt32(Console.ReadLine());
-                    Console.WriteLine($"you choose option {i_option}");
                     switch (i_option)
                     {
+                        case 1:
+                            Console.WriteLine("Running example of Linear Table");
+                            LinearTable linearTable = new LinearTable();
+                            linearTable.Run();
+                        break;
+                        case 2:
+                            Console.WriteLine("Running example of Linear Table Append");
+                            LinearTableAppend linearTableAppend = new LinearTableAppend();
+                            linearTableAppend.Run();
+                        break;
+                        case 3:
+                            Console.WriteLine("Running example of Linear Table Delete");
+                            LinearTableDelete linearTableDelete = new LinearTableDelete();
+                            linearTableDelete.Run();
+                        break;
+                        case 4:
+                            Console.WriteLine("Running example of Linear Table Insert");
+                            LinearTableInsert linearTableInsert = new LinearTableInsert();
+                            linearTableInsert.Run();
+                        break;
+                        case 5:
+                            Console.WriteLine("Running example of Linear Table Search");
+                            LinearTableSearch linearTableSearch = new LinearTableSearch();
+                            linearTableSearch.Run();
+                        break;
                         default:
                             break;
                     }
@@ -164,7 +191,8 @@ namespace logical_exercise
                             Console.WriteLine("7.-Visitor");
                             Console.WriteLine("8.-Strategy");
                             Console.WriteLine("9.-Mediator");
-                            Console.WriteLine("10.-Interpreter");
+                            Console.WriteLine("10.-Memento");
+                            Console.WriteLine("11.-Interpreter");
                             ii_option = Convert.ToInt32(Console.ReadLine());
                             switch (ii_option)
                             {
@@ -187,6 +215,30 @@ namespace logical_exercise
                                 case 5:
                                     StateTest state = new StateTest();
                                     state.Run();
+                                break;
+                                case 6:
+                                    TemplateMehodTest templateMehod = new TemplateMehodTest();
+                                    templateMehod.Run();
+                                break;
+                                case 7:
+                                    VisitorTest visitor = new VisitorTest();
+                                    visitor.Run();
+                                break;
+                                case 8:
+                                    StrategyTest strategy = new StrategyTest();
+                                    strategy.Run();
+                                break;
+                                case 9:
+                                    MediatorTest mediator = new MediatorTest();
+                                    mediator.Run();
+                                break;
+                                case 10:
+                                    MementoTest memento = new MementoTest();
+                                    memento.Run();
+                                break;
+                                case 11:
+                                    InterpreterTest interpreter = new InterpreterTest();
+                                    interpreter.Run();
                                 break;
                                 default:
                                 break;

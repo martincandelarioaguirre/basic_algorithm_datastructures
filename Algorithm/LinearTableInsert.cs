@@ -11,6 +11,7 @@ namespace logical_exercise.Algorithm
             int index = 2;
             scores = Insert(scores, val, index);
             Console.WriteLine(String.Join(',', scores));
+            Console.Read();
         }
 
         public static int[] Insert(int[] scores, int val, int index)
@@ -18,12 +19,16 @@ namespace logical_exercise.Algorithm
             int[] tempArray = new int[scores.Length + 1];
             for (int i = 0; i < scores.Length; i++)
             {
-                if (index == i){
+                if (index == i)
+                {
                     tempArray[i] = val;
-                } 
-                if (i < index) {
+                }
+                if (i < index)
+                {
                     tempArray[i] = scores[i];
-                } else {
+                }
+                else
+                {
                     tempArray[i + 1] = scores[i];
                 }
             }
