@@ -54,14 +54,14 @@ namespace logical_exercise.Algorithm
         {
             HeapSort heap = new HeapSort();
             int[] scores = { 10, 90, 20, 80, 30, 70, 4060, 50 };
-            Console.WriteLine("Before building a heap");
-            Console.WriteLine($"Data: {String.Join(',', scores)}");
+            ConsoleUtility.WriteLine("Before building a heap");
+            ConsoleUtility.WriteLine($"Data: {String.Join(',', scores)}");
             heap.CreateHeap(scores);
-            Console.WriteLine("After building a heap: ");
-            Console.WriteLine($"Data: {String.Join(',', scores)}");
+            ConsoleUtility.WriteLine("After building a heap: ");
+            ConsoleUtility.WriteLine($"Data: {String.Join(',', scores)}");
             heap.Heap_Sort();
-            Console.WriteLine("After sorting the heap");
-            Console.WriteLine($"Data: {String.Join(',', scores)}");
+            ConsoleUtility.WriteLine("After sorting the heap");
+            ConsoleUtility.WriteLine($"Data: {String.Join(',', scores)}");
         }
     }
 }

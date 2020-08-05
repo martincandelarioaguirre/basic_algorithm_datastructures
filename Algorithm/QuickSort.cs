@@ -8,7 +8,7 @@ namespace logical_exercise.Algorithm
         {
             int[] scores = { 90, 60, 50, 80, 70, 100 };
             quickSort(scores);
-            Console.WriteLine($"data displayed {string.Join(',', scores)}");
+            ConsoleUtility.WriteLine($"data displayed {string.Join(',', scores)}");
         }
 
         public static void quickSort(int[] array)

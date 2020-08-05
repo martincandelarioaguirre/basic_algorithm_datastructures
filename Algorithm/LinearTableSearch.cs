@@ -11,7 +11,7 @@ namespace logical_exercise.Algorithm
             int[] scores = { 90, 70, 50, 80, 60, 85 };
             int val = -1;
             val = ExistedElement(scores, search);
-            Console.WriteLine($"The element {search} was { (val < 0 ? "Not " : "") }found in the index { (val < 0 ? "" : val.ToString()) }");
+            ConsoleUtility.WriteLine($"The element {search} was { (val < 0 ? "Not " : "") }found in the index { (val < 0 ? "" : val.ToString()) }");
             Console.Read();
         }
 

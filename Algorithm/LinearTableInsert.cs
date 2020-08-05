@@ -10,7 +10,7 @@ namespace logical_exercise.Algorithm
             int val = 75;
             int index = 2;
             scores = Insert(scores, val, index);
-            Console.WriteLine(String.Join(',', scores));
+            ConsoleUtility.WriteLine(String.Join(',', scores));
             Console.Read();
         }
 

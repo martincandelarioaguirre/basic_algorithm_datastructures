@@ -9,7 +9,7 @@ namespace logical_exercise.Algorithm
             int[] scores = { 90, 70, 50, 80, 60, 85 };
             int index = 2;
             scores = Delete(scores, index);
-            Console.WriteLine($"Data: {String.Join(',', scores)}");
+            ConsoleUtility.WriteLine($"Data: {String.Join(',', scores)}");
             Console.Read();
         }
 

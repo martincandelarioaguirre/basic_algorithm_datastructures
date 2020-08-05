@@ -9,7 +9,7 @@ namespace logical_exercise.Algorithm
             int[] scores = { 30, 40, 50, 70, 85, 90, 100};
             int searchValue = 40;
             int position = BinarySearchElement(scores, searchValue);
-            Console.WriteLine($"Data index of the search value: {position}");
+            ConsoleUtility.WriteLine($"Data index of the search value: {position}");
         }
 
         public static int BinarySearchElement(int[] scores, int searchValue)

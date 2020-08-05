@@ -7,7 +7,7 @@ namespace logical_exercise.Algorithm
         public void Run() {
             int[] scores = { 90, 70, 50, 80, 60, 85 };
             Sort(scores);
-            Console.WriteLine($"Data to display: {String.Join(',',scores)}");
+            ConsoleUtility.WriteLine($"Data to display: {String.Join(',',scores)}");
         }
 
         public static void Sort(int[] scores) {

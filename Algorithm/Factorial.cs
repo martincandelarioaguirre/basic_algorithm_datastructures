@@ -8,7 +8,7 @@ namespace logical_exercise.Algorithm
         {
             int n = 5;
             long fac = factorial(n);
-            Console.WriteLine($"Data to display {fac}");
+            ConsoleUtility.WriteLine($"Data to display {fac}");
         }
 
         public static long factorial(int n)

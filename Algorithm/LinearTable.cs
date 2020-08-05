@@ -7,8 +7,8 @@ namespace logical_exercise.Algorithm
         public void Run()
         {
             int[] scores = { 90, 70, 50, 80, 60, 85 };
-            Console.WriteLine($"Data: {string.Join(',', scores)}");
-            Console.Read();
+            ConsoleUtility.WriteLine($"Data: {string.Join(',', scores)}");
+            // Console.Read();
         }
     }
 }

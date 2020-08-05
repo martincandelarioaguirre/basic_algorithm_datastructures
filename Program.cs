@@ -17,242 +17,258 @@ namespace logical_exercise
             // f.Run();
             // QuickSort quick = new QuickSort();
             // quick.Run();
-            int option = 0;
-            int i_option = 0;
-            int ii_option = 0;
+            int option = 1;
+            int i_option = 1;
+            int ii_option = 1;
+            // YO AMO A MI ESPOSA :) LE VOY A COMPRAR MUCHOS REGALOS :)
 
-            Console.WriteLine("Chose an option based in the next menu");
-            Console.WriteLine("1.-Algorithm");
-            Console.WriteLine("2.-DataStructures");
-            Console.WriteLine("3.-Design Patterns");
-            option = Convert.ToInt32(Console.ReadLine());
-            switch (option)
+            while (option != 0)
             {
-                case 1:
-                    Console.WriteLine("Algorithm");
-                    Console.WriteLine("1.-Linear Table");
-                    Console.WriteLine("2.-Linear Table Append");
-                    Console.WriteLine("3.-Linear Table Delete");
-                    Console.WriteLine("4.-Linear Table Insert");
-                    Console.WriteLine("5.-Linear Table Search");
-                    i_option = Convert.ToInt32(Console.ReadLine());
-                    switch (i_option)
-                    {
-                        case 1:
-                            Console.WriteLine("Running example of Linear Table");
-                            LinearTable linearTable = new LinearTable();
-                            linearTable.Run();
+                ConsoleUtility.WriteLine("Chose an option based in the next menu");
+                ConsoleUtility.WriteLine("1.-Algorithm");
+                ConsoleUtility.WriteLine("2.-DataStructures");
+                ConsoleUtility.WriteLine("3.-Design Patterns");
+                option = Convert.ToInt32(Console.ReadLine());
+                switch (option)
+                {
+                    case 1:
+                        ConsoleUtility.WriteLine("Algorithm");
+                        ConsoleUtility.WriteLine("1.-Linear Table");
+                        ConsoleUtility.WriteLine("2.-Linear Table Append");
+                        ConsoleUtility.WriteLine("3.-Linear Table Delete");
+                        ConsoleUtility.WriteLine("4.-Linear Table Insert");
+                        ConsoleUtility.WriteLine("5.-Linear Table Search");
+                        ConsoleUtility.WriteLine("6.-Factorial");
+                        ConsoleUtility.WriteLine("7.-Bubble Sort");
+                        i_option = Convert.ToInt32(Console.ReadLine());
+                        switch (i_option)
+                        {
+                            case 1:
+                                ConsoleUtility.WriteLine("Running example of Linear Table");
+                                LinearTable linearTable = new LinearTable();
+                                linearTable.Run();
+                                break;
+                            case 2:
+                                ConsoleUtility.WriteLine("Running example of Linear Table Append");
+                                LinearTableAppend linearTableAppend = new LinearTableAppend();
+                                linearTableAppend.Run();
+                                break;
+                            case 3:
+                                ConsoleUtility.WriteLine("Running example of Linear Table Delete");
+                                LinearTableDelete linearTableDelete = new LinearTableDelete();
+                                linearTableDelete.Run();
+                                break;
+                            case 4:
+                                ConsoleUtility.WriteLine("Running example of Linear Table Insert");
+                                LinearTableInsert linearTableInsert = new LinearTableInsert();
+                                linearTableInsert.Run();
+                                break;
+                            case 5:
+                                ConsoleUtility.WriteLine("Running example of Linear Table Search");
+                                LinearTableSearch linearTableSearch = new LinearTableSearch();
+                                linearTableSearch.Run();
+                                break;
+                            case 6:
+                                ConsoleUtility.WriteLine("Running example of Factorial");
+                                Factorial factorial = new Factorial();
+                                factorial.Run();
+                                break;
+                            case 7:
+                                ConsoleUtility.WriteLine("Running example of Bubble Sort");
+                                BubbleSort bubbleSort = new BubbleSort();
+                                bubbleSort.Run();
+                                break;
+                            default:
+                                break;
+                        }
                         break;
-                        case 2:
-                            Console.WriteLine("Running example of Linear Table Append");
-                            LinearTableAppend linearTableAppend = new LinearTableAppend();
-                            linearTableAppend.Run();
+                    case 2:
+                        ConsoleUtility.WriteLine("Data Structures");
+                        i_option = Convert.ToInt32(Console.ReadLine());
+                        ConsoleUtility.WriteLine($"you choose option {i_option}");
+                        switch (i_option)
+                        {
+                            default:
+                                break;
+                        }
                         break;
-                        case 3:
-                            Console.WriteLine("Running example of Linear Table Delete");
-                            LinearTableDelete linearTableDelete = new LinearTableDelete();
-                            linearTableDelete.Run();
-                        break;
-                        case 4:
-                            Console.WriteLine("Running example of Linear Table Insert");
-                            LinearTableInsert linearTableInsert = new LinearTableInsert();
-                            linearTableInsert.Run();
-                        break;
-                        case 5:
-                            Console.WriteLine("Running example of Linear Table Search");
-                            LinearTableSearch linearTableSearch = new LinearTableSearch();
-                            linearTableSearch.Run();
-                        break;
-                        default:
-                            break;
-                    }
-                    break;
-                case 2:
-                    Console.WriteLine("Data Structures");
-                    i_option = Convert.ToInt32(Console.ReadLine());
-                    Console.WriteLine($"you choose option {i_option}");
-                    switch (i_option)
-                    {
-                        default:
-                            break;
-                    }
-                    break;
-                case 3:
-                    Console.WriteLine("Design Patterns");
-                    Console.WriteLine("1.-Creational");
-                    Console.WriteLine("2.-Structural");
-                    Console.WriteLine("3.-Behavioral");
+                    case 3:
+                        ConsoleUtility.WriteLine("Design Patterns");
+                        ConsoleUtility.WriteLine("1.-Creational");
+                        ConsoleUtility.WriteLine("2.-Structural");
+                        ConsoleUtility.WriteLine("3.-Behavioral");
 
-                    i_option = Convert.ToInt32(Console.ReadLine());
-                    Console.WriteLine($"you choose option {i_option}");
-                    switch (i_option)
-                    {
-                        case 1:
-                            Console.WriteLine("Example of creational design patterns");
-                            Console.WriteLine("1.-Singleton");
-                            Console.WriteLine("2.-Factory");
-                            Console.WriteLine("3.-Builder");
-                            Console.WriteLine("4.-Prototype");
-                            Console.WriteLine("5.-Fluent Interface");
-                            Console.WriteLine("6.-Factory Method");
-                            Console.WriteLine("7.-Abstract Factory");
-                            Console.WriteLine("Select one option");
-                            ii_option = Convert.ToInt32(Console.ReadLine());
-                            switch (ii_option)
-                            {
-                                case 1:
-                                    Console.WriteLine("Running example of singleton design pattern");
-                                    SingletonTest singletonTest = new SingletonTest();
-                                    singletonTest.Run();
-                                    break;
-                                case 2:
-                                    Console.WriteLine("Runnig example of Factory design pattern");
-                                    FactoryTest factoryTest = new FactoryTest();
-                                    factoryTest.Run();
-                                    break;
-                                case 3:
-                                    Console.WriteLine("Running example fo Builder Desiogn Pattern");
-                                    BuilderTest builderTest = new BuilderTest();
-                                    builderTest.Run();
-                                    break;
-                                case 4:
-                                    Console.WriteLine("Running example of Prototype Design Pattern");
-                                    PrototypeTest prototype = new PrototypeTest();
-                                    prototype.Run();
-                                    break;
-                                case 5:
-                                    FluentInterface fluent = new FluentInterface();
-                                    fluent.Run();
-                                    break;
-                                case 6:
-                                    FactoryMethodTest factory = new FactoryMethodTest();
-                                    factory.Run();
-                                    break;
-                                case 7:
-                                    AbstractFactoryTest abstractFactory = new AbstractFactoryTest();
-                                    abstractFactory.Run();
-                                    break;
-                                default:
-                                    break;
-                            }
-                            break;
-                        case 2:
-                            Console.WriteLine("Example of Structural Design Pattern");
-                            Console.WriteLine("1.-Adapter");
-                            Console.WriteLine("2.-Facade");
-                            Console.WriteLine("3.-Decorator");
-                            Console.WriteLine("4.-Composite");
-                            Console.WriteLine("5.-Proxy");
-                            Console.WriteLine("6.-Flyweight");
-                            Console.WriteLine("7.-Bridge");
-                            ii_option = Convert.ToInt32(Console.ReadLine());
-                            switch (ii_option)
-                            {
-                                case 1:
-                                    AdapterTest adapter = new AdapterTest();
-                                    adapter.Run();
-                                    break;
-                                case 2:
-                                    FacadeTest facade = new FacadeTest();
-                                    facade.Run();
-                                    break;
-                                case 3:
-                                    DecoratorTest decorator = new DecoratorTest();
-                                    decorator.Run();
+                        i_option = Convert.ToInt32(Console.ReadLine());
+                        ConsoleUtility.WriteLine($"you choose option {i_option}");
+                        switch (i_option)
+                        {
+                            case 1:
+                                ConsoleUtility.WriteLine("Example of creational design patterns");
+                                ConsoleUtility.WriteLine("1.-Singleton");
+                                ConsoleUtility.WriteLine("2.-Factory");
+                                ConsoleUtility.WriteLine("3.-Builder");
+                                ConsoleUtility.WriteLine("4.-Prototype");
+                                ConsoleUtility.WriteLine("5.-Fluent Interface");
+                                ConsoleUtility.WriteLine("6.-Factory Method");
+                                ConsoleUtility.WriteLine("7.-Abstract Factory");
+                                ConsoleUtility.WriteLine("Select one option");
+                                ii_option = Convert.ToInt32(Console.ReadLine());
+                                switch (ii_option)
+                                {
+                                    case 1:
+                                        ConsoleUtility.WriteLine("Running example of singleton design pattern");
+                                        SingletonTest singletonTest = new SingletonTest();
+                                        singletonTest.Run();
+                                        break;
+                                    case 2:
+                                        ConsoleUtility.WriteLine("Runnig example of Factory design pattern");
+                                        FactoryTest factoryTest = new FactoryTest();
+                                        factoryTest.Run();
+                                        break;
+                                    case 3:
+                                        ConsoleUtility.WriteLine("Running example fo Builder Desiogn Pattern");
+                                        BuilderTest builderTest = new BuilderTest();
+                                        builderTest.Run();
+                                        break;
+                                    case 4:
+                                        ConsoleUtility.WriteLine("Running example of Prototype Design Pattern");
+                                        PrototypeTest prototype = new PrototypeTest();
+                                        prototype.Run();
+                                        break;
+                                    case 5:
+                                        FluentInterface fluent = new FluentInterface();
+                                        fluent.Run();
+                                        break;
+                                    case 6:
+                                        FactoryMethodTest factory = new FactoryMethodTest();
+                                        factory.Run();
+                                        break;
+                                    case 7:
+                                        AbstractFactoryTest abstractFactory = new AbstractFactoryTest();
+                                        abstractFactory.Run();
+                                        break;
+                                    default:
+                                        break;
+                                }
                                 break;
-                                case 4:
-                                    CompositeTest composite = new CompositeTest();
-                                    composite.Run();
+                            case 2:
+                                ConsoleUtility.WriteLine("Example of Structural Design Pattern");
+                                ConsoleUtility.WriteLine("1.-Adapter");
+                                ConsoleUtility.WriteLine("2.-Facade");
+                                ConsoleUtility.WriteLine("3.-Decorator");
+                                ConsoleUtility.WriteLine("4.-Composite");
+                                ConsoleUtility.WriteLine("5.-Proxy");
+                                ConsoleUtility.WriteLine("6.-Flyweight");
+                                ConsoleUtility.WriteLine("7.-Bridge");
+                                ii_option = Convert.ToInt32(Console.ReadLine());
+                                switch (ii_option)
+                                {
+                                    case 1:
+                                        AdapterTest adapter = new AdapterTest();
+                                        adapter.Run();
+                                        break;
+                                    case 2:
+                                        FacadeTest facade = new FacadeTest();
+                                        facade.Run();
+                                        break;
+                                    case 3:
+                                        DecoratorTest decorator = new DecoratorTest();
+                                        decorator.Run();
+                                        break;
+                                    case 4:
+                                        CompositeTest composite = new CompositeTest();
+                                        composite.Run();
+                                        break;
+                                    case 5:
+                                        ProxyTest proxy = new ProxyTest();
+                                        proxy.Run();
+                                        break;
+                                    case 6:
+                                        FlyweightTest flyweight = new FlyweightTest();
+                                        flyweight.Run();
+                                        break;
+                                    case 7:
+                                        BridgeTest bridge = new BridgeTest();
+                                        bridge.Run();
+                                        break;
+                                    default:
+                                        break;
+                                }
                                 break;
-                                case 5:
-                                    ProxyTest proxy = new ProxyTest();
-                                    proxy.Run();
+                            case 3:
+                                ConsoleUtility.WriteLine("Example of Behavioral Design Pattern");
+                                ConsoleUtility.WriteLine("1.-Chain of Responsability");
+                                ConsoleUtility.WriteLine("2.-Command");
+                                ConsoleUtility.WriteLine("3.-Observer");
+                                ConsoleUtility.WriteLine("4.-Iterator");
+                                ConsoleUtility.WriteLine("5.-State");
+                                ConsoleUtility.WriteLine("6.-Template Method");
+                                ConsoleUtility.WriteLine("7.-Visitor");
+                                ConsoleUtility.WriteLine("8.-Strategy");
+                                ConsoleUtility.WriteLine("9.-Mediator");
+                                ConsoleUtility.WriteLine("10.-Memento");
+                                ConsoleUtility.WriteLine("11.-Interpreter");
+                                ii_option = Convert.ToInt32(Console.ReadLine());
+                                switch (ii_option)
+                                {
+                                    case 1:
+                                        ChainOfResponsability chain = new ChainOfResponsability();
+                                        chain.Run();
+                                        break;
+                                    case 2:
+                                        CommandTest command = new CommandTest();
+                                        command.Run();
+                                        break;
+                                    case 3:
+                                        ObserverTest observer = new ObserverTest();
+                                        observer.Run();
+                                        break;
+                                    case 4:
+                                        IteratorTest iterator = new IteratorTest();
+                                        iterator.Run();
+                                        break;
+                                    case 5:
+                                        StateTest state = new StateTest();
+                                        state.Run();
+                                        break;
+                                    case 6:
+                                        TemplateMehodTest templateMehod = new TemplateMehodTest();
+                                        templateMehod.Run();
+                                        break;
+                                    case 7:
+                                        VisitorTest visitor = new VisitorTest();
+                                        visitor.Run();
+                                        break;
+                                    case 8:
+                                        StrategyTest strategy = new StrategyTest();
+                                        strategy.Run();
+                                        break;
+                                    case 9:
+                                        MediatorTest mediator = new MediatorTest();
+                                        mediator.Run();
+                                        break;
+                                    case 10:
+                                        MementoTest memento = new MementoTest();
+                                        memento.Run();
+                                        break;
+                                    case 11:
+                                        InterpreterTest interpreter = new InterpreterTest();
+                                        interpreter.Run();
+                                        break;
+                                    default:
+                                        break;
+                                }
                                 break;
-                                case 6:
-                                    FlyweightTest flyweight = new FlyweightTest();
-                                    flyweight.Run();
+                            default:
                                 break;
-                                case 7:
-                                    BridgeTest bridge = new BridgeTest();
-                                    bridge.Run();
-                                break;
-                                default:
-                                    break;
-                            }
-                            break;
-                        case 3:
-                            Console.WriteLine("Example of Behavioral Design Pattern");
-                            Console.WriteLine("1.-Chain of Responsability");
-                            Console.WriteLine("2.-Command");
-                            Console.WriteLine("3.-Observer");
-                            Console.WriteLine("4.-Iterator");
-                            Console.WriteLine("5.-State");
-                            Console.WriteLine("6.-Template Method");
-                            Console.WriteLine("7.-Visitor");
-                            Console.WriteLine("8.-Strategy");
-                            Console.WriteLine("9.-Mediator");
-                            Console.WriteLine("10.-Memento");
-                            Console.WriteLine("11.-Interpreter");
-                            ii_option = Convert.ToInt32(Console.ReadLine());
-                            switch (ii_option)
-                            {
-                                case 1:
-                                    ChainOfResponsability chain = new ChainOfResponsability();
-                                    chain.Run();
-                                break;
-                                case 2:
-                                    CommandTest command = new CommandTest();
-                                    command.Run();
-                                break;
-                                case 3:
-                                    ObserverTest observer = new ObserverTest();
-                                    observer.Run();
-                                break;
-                                case 4:
-                                    IteratorTest iterator = new IteratorTest();
-                                    iterator.Run();
-                                break;
-                                case 5:
-                                    StateTest state = new StateTest();
-                                    state.Run();
-                                break;
-                                case 6:
-                                    TemplateMehodTest templateMehod = new TemplateMehodTest();
-                                    templateMehod.Run();
-                                break;
-                                case 7:
-                                    VisitorTest visitor = new VisitorTest();
-                                    visitor.Run();
-                                break;
-                                case 8:
-                                    StrategyTest strategy = new StrategyTest();
-                                    strategy.Run();
-                                break;
-                                case 9:
-                                    MediatorTest mediator = new MediatorTest();
-                                    mediator.Run();
-                                break;
-                                case 10:
-                                    MementoTest memento = new MementoTest();
-                                    memento.Run();
-                                break;
-                                case 11:
-                                    InterpreterTest interpreter = new InterpreterTest();
-                                    interpreter.Run();
-                                break;
-                                default:
-                                break;
-                            }
-                            break;
-                        default:
-                            break;
-                    }
-                    break;
-                default:
-                    Console.WriteLine("Exit");
-                    break;
+                        }
+                        break;
+                    default:
+                        ConsoleUtility.WriteLine("Exit");
+                        break;
+                }
+
             }
-
 
 
 
@@ -349,13 +365,13 @@ namespace logical_exercise
             // linkedList.printAllNodes();
             // linkedList.ReverseLinkedList();
             // linkedList.printAllNodes();
-            // Console.WriteLine($"Data {linkedList.ExistValue(4)}");
+            // ConsoleUtility.WriteLine($"Data {linkedList.ExistValue(4)}");
             // linkedList.DeleteNodeByKey(4);
-            // Console.WriteLine($"Data {linkedList.ExistValue(4)}");
+            // ConsoleUtility.WriteLine($"Data {linkedList.ExistValue(4)}");
             // linkedList.printAllNodes();
             // linkedList.InsertTop(10);
             // linkedList.printAllNodes();
-            // Console.WriteLine($"Total of elements of the linked list {linkedList.GetCount()}");
+            // ConsoleUtility.WriteLine($"Total of elements of the linked list {linkedList.GetCount()}");
 
             // DoubleLinkedList<int> doubleLinkedList = new DoubleLinkedList<int>();
             // doubleLinkedList.InsertTop(1);
@@ -381,28 +397,28 @@ namespace logical_exercise
 
             // Node node = binaryTree.Find(5);
             // int depth = binaryTree.GetTreeDepth();
-            // Console.WriteLine(depth);
+            // ConsoleUtility.WriteLine(depth);
 
-            // Console.WriteLine("PreOrder Traversal:");
+            // ConsoleUtility.WriteLine("PreOrder Traversal:");
             // binaryTree.TraversePreOrder(binaryTree.Root);
-            // Console.WriteLine();
+            // ConsoleUtility.WriteLine();
 
-            // Console.WriteLine("InOrder Traversal:");
+            // ConsoleUtility.WriteLine("InOrder Traversal:");
             // binaryTree.TraverseInOrder(binaryTree.Root);
-            // Console.WriteLine();
+            // ConsoleUtility.WriteLine();
 
-            // Console.WriteLine("PostOrder Traversal:");
+            // ConsoleUtility.WriteLine("PostOrder Traversal:");
             // binaryTree.TraversePostOrder(binaryTree.Root);
-            // Console.WriteLine();
+            // ConsoleUtility.WriteLine();
 
             // binaryTree.Remove(7);
             // binaryTree.Remove(8);
 
-            // Console.WriteLine("PreOrder Traversal After Removing Operation:");
+            // ConsoleUtility.WriteLine("PreOrder Traversal After Removing Operation:");
             // binaryTree.TraversePreOrder(binaryTree.Root);
-            // Console.WriteLine();
+            // ConsoleUtility.WriteLine();
 
-            // Console.ReadLine();
+            // ConsoleUtility.ReadLine();
         }
     }
 }

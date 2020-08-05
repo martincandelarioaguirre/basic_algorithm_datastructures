@@ -8,7 +8,7 @@ namespace logical_exercise.Algorithm
         {
             int[] scores = { 50, 65, 99, 87, 74, 63, 76, 100, 92 };
             Merge_Sort(scores);
-            Console.WriteLine(String.Join(',', scores));
+            ConsoleUtility.WriteLine(String.Join(',', scores));
 
         }
 

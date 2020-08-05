@@ -8,7 +8,7 @@ namespace logical_exercise.Algorithm
         {
             int[] scores = { 90, 70, 50, 80, 60, 85 };
             Sort2(scores);
-            Console.WriteLine($"scores sorted {String.Join(',', scores)}");
+            ConsoleUtility.WriteLine($"scores sorted {String.Join(',', scores)}");
 
         }
 
