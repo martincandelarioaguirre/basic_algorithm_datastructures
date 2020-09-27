@@ -25,7 +25,7 @@ namespace logical_exercise.DataStructuresBook
                 return;
             }
             InOrder(root.left); // Transversing the left subtree
-            Console.WriteLine($"{root.data},");
+            ConsoleUtility.WriteLine($"{root.data},");
             InOrder(root.right); // Transversing the right subtree
         }
 
@@ -35,7 +35,7 @@ namespace logical_exercise.DataStructuresBook
             {
                 return;
             }
-            Console.WriteLine($"{root.data},");
+            ConsoleUtility.WriteLine($"{root.data},");
             // Recursive Transversing the left subtree
             PreOrder(root.left);
             // Recursive Transversing the right subtree
@@ -50,7 +50,7 @@ namespace logical_exercise.DataStructuresBook
             }
             PostOrder(root.left);
             PostOrder(root.right);
-            Console.WriteLine($"{root.data},");
+            ConsoleUtility.WriteLine($"{root.data},");
         }
 
         public static void Insert(NodeBT node, int newData) {
@@ -153,15 +153,15 @@ namespace logical_exercise.DataStructuresBook
             Insert(GetRoot(), 80);
             Insert(GetRoot(), 70);
             Insert(GetRoot(), 90);
-            Console.WriteLine("In-order tranversal binary search tree");
+            ConsoleUtility.WriteLine("In-order tranversal binary search tree");
             InOrder(GetRoot());
-            Console.WriteLine("Pre-Order transversal binary search tree");
+            ConsoleUtility.WriteLine("Pre-Order transversal binary search tree");
             PreOrder(GetRoot());   
-            Console.WriteLine("Post-order traversal binary search tree");
+            ConsoleUtility.WriteLine("Post-order traversal binary search tree");
             PostOrder(GetRoot());
-            Console.WriteLine($"Minimum value: {SearchMinValue(GetRoot()).data}");
-            Console.WriteLine($"Maximum value: {SearchMaxValue(GetRoot()).data}");
-            Console.WriteLine("Remove node with value 20");
+            ConsoleUtility.WriteLine($"Minimum value: {SearchMinValue(GetRoot()).data}");
+            ConsoleUtility.WriteLine($"Maximum value: {SearchMaxValue(GetRoot()).data}");
+            ConsoleUtility.WriteLine("Remove node with value 20");
             Remove(GetRoot(), 20);
             InOrder(GetRoot());
         }

@@ -84,10 +84,28 @@ namespace logical_exercise
                         break;
                     case 2:
                         ConsoleUtility.WriteLine("Data Structures");
+                        ConsoleUtility.WriteLine("1.-Binary Search Tree");
+                        ConsoleUtility.WriteLine("2.-Binary Tree");
+                        ConsoleUtility.WriteLine("3.-Double Linked List");
+                        ConsoleUtility.WriteLine("4.-Doubly Linked List");
+                        ConsoleUtility.WriteLine("5.-Hash Table");
+                        ConsoleUtility.WriteLine("6.-Linked List");
+                        ConsoleUtility.WriteLine("7.-One Way Circular List");
+                        ConsoleUtility.WriteLine("8.-Queue");
+                        ConsoleUtility.WriteLine("9.-Stack");
+                        ConsoleUtility.WriteLine("10.-Two Way Circular List");
+                        ConsoleUtility.WriteLine("11.-Unidirectional Linked List");
                         i_option = Convert.ToInt32(Console.ReadLine());
                         ConsoleUtility.WriteLine($"you choose option {i_option}");
                         switch (i_option)
                         {
+                            case 1:
+                                BinarySearchTree binarySearchTree = new BinarySearchTree();
+                                binarySearchTree.Run();
+                                break;
+                            case 2:
+                                
+                                break;
                             default:
                                 break;
                         }
