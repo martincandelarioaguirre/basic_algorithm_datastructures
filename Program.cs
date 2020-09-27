@@ -43,6 +43,7 @@ namespace logical_exercise
                         ConsoleUtility.WriteLine("8.-Heap Sort");
                         ConsoleUtility.WriteLine("9.-Insert Sorting");
                         ConsoleUtility.WriteLine("10.-Merge Sort");
+                        ConsoleUtility.WriteLine("11.-Quick Sort");
                         i_option = Convert.ToInt32(Console.ReadLine());
                         switch (i_option)
                         {
@@ -95,6 +96,11 @@ namespace logical_exercise
                                 ConsoleUtility.WriteLine("Running example of Merge Sort");
                                 MergeSort mergeSort = new MergeSort();
                                 mergeSort.Run();
+                                break;
+                            case 11:
+                                ConsoleUtility.WriteLine("Running example pf Quick Sort");
+                                QuickSort quickSort = new QuickSort();
+                                quickSort.Run();
                                 break;
                             default:
                                 break;
