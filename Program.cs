@@ -106,6 +106,10 @@ namespace logical_exercise
                             case 2:
                                 
                                 break;
+                            case 3:
+                                DoublyLinkedList doublyLinkedList = new DoublyLinkedList();
+                                doublyLinkedList.Run();
+                                break;
                             default:
                                 break;
                         }

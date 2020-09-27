@@ -59,7 +59,7 @@ namespace logical_exercise.DataStructures
             Node current = node;
             while (current != null)
             {
-                Console.WriteLine($"Data contained: {current.data}");
+                ConsoleUtility.WriteLine($"Data contained: {current.data}");
                 current = current.next;
             }
         }
