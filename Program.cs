@@ -40,7 +40,8 @@ namespace logical_exercise
                         ConsoleUtility.WriteLine("5.-Linear Table Search");
                         ConsoleUtility.WriteLine("6.-Factorial");
                         ConsoleUtility.WriteLine("7.-Bubble Sort");
-                        ConsoleUtility.WriteLine("8.-HeapSort");
+                        ConsoleUtility.WriteLine("8.-Heap Sort");
+                        ConsoleUtility.WriteLine("9.-Insert Sorting");
                         i_option = Convert.ToInt32(Console.ReadLine());
                         switch (i_option)
                         {
@@ -83,6 +84,11 @@ namespace logical_exercise
                                 ConsoleUtility.WriteLine("Running example of HeapSort");
                                 HeapSort heapSort = new HeapSort();
                                 heapSort.Run();
+                                break;
+                            case 9:
+                                ConsoleUtility.WriteLine("Running example of InsertSorting");
+                                InsertSorting insertSorting = new InsertSorting();
+                                insertSorting.Run();
                                 break;
                             default:
                                 break;
