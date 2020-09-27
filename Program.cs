@@ -42,6 +42,7 @@ namespace logical_exercise
                         ConsoleUtility.WriteLine("7.-Bubble Sort");
                         ConsoleUtility.WriteLine("8.-Heap Sort");
                         ConsoleUtility.WriteLine("9.-Insert Sorting");
+                        ConsoleUtility.WriteLine("10.-Merge Sort");
                         i_option = Convert.ToInt32(Console.ReadLine());
                         switch (i_option)
                         {
@@ -89,6 +90,11 @@ namespace logical_exercise
                                 ConsoleUtility.WriteLine("Running example of InsertSorting");
                                 InsertSorting insertSorting = new InsertSorting();
                                 insertSorting.Run();
+                                break;
+                            case 10:
+                                ConsoleUtility.WriteLine("Running example of Merge Sort");
+                                MergeSort mergeSort = new MergeSort();
+                                mergeSort.Run();
                                 break;
                             default:
                                 break;
