@@ -140,7 +140,6 @@ namespace logical_exercise.DataStructures {
 
             Node node = binaryTree.Find (5);
             int depth = binaryTree.GetTreeDepth ();
-            ConsoleUtility.WriteLine (depth.ToString());
 
             ConsoleUtility.WriteLine ("PreOrder Traversal:");
             binaryTree.TraversePreOrder (binaryTree.Root);

@@ -164,6 +164,26 @@ namespace logical_exercise
                                 OneWayCircularList circularList = new OneWayCircularList();
                                 circularList.Run();
                                 break;
+                            case 8:
+                                ConsoleUtility.WriteLine("Running example of Queue");
+                                Queue queue = new Queue();
+                                queue.Run();
+                                break;
+                            case 9:
+                                ConsoleUtility.WriteLine("Running example of Stack");
+                                Stack stack = new Stack();
+                                stack.Run();
+                                break;
+                            case 10:
+                                ConsoleUtility.WriteLine("Running example of Two Way Circular List");
+                                TwoWayCircularList twoWay = new TwoWayCircularList();
+                                twoWay.Run();
+                                break;
+                            case 11:
+                                ConsoleUtility.WriteLine("Running example fo Unidirectional Linked List");
+                                UnidirectionalLinkedList unidirectionalLinkedList = new UnidirectionalLinkedList();
+                                unidirectionalLinkedList.Run();
+                                break;
                             default:
                                 break;
                         }
@@ -372,16 +392,12 @@ namespace logical_exercise
             // Factorial factorial = new Factorial();
             // factorial.Run();
 
-            // Stack stack = new Stack();
-            // stack.Run();
-
-            // Queue queue = new Queue();
-            // queue.Run();
+           
 
             
+            
 
-            // TwoWayCircularList twoWay = new TwoWayCircularList();
-            // twoWay.Run();
+            
 
             // OneWayCircularList circularList = new OneWayCircularList();
             // circularList.Run();
