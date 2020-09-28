@@ -116,8 +116,8 @@ namespace logical_exercise
                         ConsoleUtility.WriteLine("Data Structures");
                         ConsoleUtility.WriteLine("1.-Binary Search Tree");
                         ConsoleUtility.WriteLine("2.-Binary Tree");
-                        ConsoleUtility.WriteLine("3.-Double Linked List");
-                        ConsoleUtility.WriteLine("4.-Doubly Linked List");
+                        ConsoleUtility.WriteLine("3.-Doubly Linked List");
+                        ConsoleUtility.WriteLine("4.-Double Linked List");
                         ConsoleUtility.WriteLine("5.-Hash Table");
                         ConsoleUtility.WriteLine("6.-Linked List");
                         ConsoleUtility.WriteLine("7.-One Way Circular List");
@@ -130,15 +130,39 @@ namespace logical_exercise
                         switch (i_option)
                         {
                             case 1:
+                                ConsoleUtility.WriteLine("Running example of Binary Search Tree");
                                 BinarySearchTree binarySearchTree = new BinarySearchTree();
                                 binarySearchTree.Run();
                                 break;
                             case 2:
-                                
+                                ConsoleUtility.WriteLine("Running example of Binary Tree");
+                                BinaryTree binaryTree = new BinaryTree();
+                                binaryTree.Run();
                                 break;
                             case 3:
+                                ConsoleUtility.WriteLine("Running example of DoublyLinkedList");
                                 DoublyLinkedList doublyLinkedList = new DoublyLinkedList();
                                 doublyLinkedList.Run();
+                                break;
+                            case 4:
+                                ConsoleUtility.WriteLine("Running example of DoubleLinkedList");
+                                DoubleLinkedList doubleLinkedList = new DoubleLinkedList();
+                                doubleLinkedList.Run();
+                                break;
+                            case 5:
+                                ConsoleUtility.WriteLine("Running example of HashTable");
+                                HashTable hashTable = new HashTable();
+                                hashTable.Run();
+                                break;
+                            case 6:
+                                ConsoleUtility.WriteLine("Running example of Linked List");
+                                LinkedList<int> linkedList = new LinkedList<int>();
+                                linkedList.Run();
+                                break;
+                            case 7:
+                                ConsoleUtility.WriteLine("Running example of One Way Circular List");
+                                OneWayCircularList circularList = new OneWayCircularList();
+                                circularList.Run();
                                 break;
                             default:
                                 break;
@@ -354,8 +378,7 @@ namespace logical_exercise
             // Queue queue = new Queue();
             // queue.Run();
 
-            // OneWayCircularList circularList = new OneWayCircularList();
-            // circularList.Run();
+            
 
             // TwoWayCircularList twoWay = new TwoWayCircularList();
             // twoWay.Run();
@@ -398,73 +421,13 @@ namespace logical_exercise
             // LinearTableAppend linearTableAppend = new LinearTableAppend();
             // linearTableAppend.Run();
 
-            //LinkedList<int> linkedList = new LinkedList<int>();
-            // linkedList.InsertFirst(5);
-            // linkedList.InsertFirst(4);
-            // linkedList.InsertFirst(3);
-            // linkedList.InsertFirst(2);
-            // linkedList.InsertFirst(1);
-            // linkedList.printAllNodes();
-            // linkedList.InsertTop(1);
-            // linkedList.InsertTop(2);
-            // linkedList.InsertTop(3);
-            // linkedList.InsertTop(4);
-            // linkedList.InsertTop(5);
-            // linkedList.printAllNodes();
-            // linkedList.ReverseLinkedList();
-            // linkedList.printAllNodes();
-            // ConsoleUtility.WriteLine($"Data {linkedList.ExistValue(4)}");
-            // linkedList.DeleteNodeByKey(4);
-            // ConsoleUtility.WriteLine($"Data {linkedList.ExistValue(4)}");
-            // linkedList.printAllNodes();
-            // linkedList.InsertTop(10);
-            // linkedList.printAllNodes();
-            // ConsoleUtility.WriteLine($"Total of elements of the linked list {linkedList.GetCount()}");
+            
 
-            // DoubleLinkedList<int> doubleLinkedList = new DoubleLinkedList<int>();
-            // doubleLinkedList.InsertTop(1);
-            // doubleLinkedList.InsertTop(2);
-            // doubleLinkedList.InsertTop(3);
-            // doubleLinkedList.InsertTop(4);
-            // doubleLinkedList.InsertTop(5);
-            // doubleLinkedList.printAllNodes();
-            // doubleLinkedList.ReverseDoubleLinkedList();
-            // doubleLinkedList.printAllNodes();
+            
 
 
 
-            // BinaryTree binaryTree = new BinaryTree();
-
-            // binaryTree.Add(1);
-            // binaryTree.Add(2);
-            // binaryTree.Add(7);
-            // binaryTree.Add(3);
-            // binaryTree.Add(10);
-            // binaryTree.Add(5);
-            // binaryTree.Add(8);
-
-            // Node node = binaryTree.Find(5);
-            // int depth = binaryTree.GetTreeDepth();
-            // ConsoleUtility.WriteLine(depth);
-
-            // ConsoleUtility.WriteLine("PreOrder Traversal:");
-            // binaryTree.TraversePreOrder(binaryTree.Root);
-            // ConsoleUtility.WriteLine();
-
-            // ConsoleUtility.WriteLine("InOrder Traversal:");
-            // binaryTree.TraverseInOrder(binaryTree.Root);
-            // ConsoleUtility.WriteLine();
-
-            // ConsoleUtility.WriteLine("PostOrder Traversal:");
-            // binaryTree.TraversePostOrder(binaryTree.Root);
-            // ConsoleUtility.WriteLine();
-
-            // binaryTree.Remove(7);
-            // binaryTree.Remove(8);
-
-            // ConsoleUtility.WriteLine("PreOrder Traversal After Removing Operation:");
-            // binaryTree.TraversePreOrder(binaryTree.Root);
-            // ConsoleUtility.WriteLine();
+            
 
             // ConsoleUtility.ReadLine();
         }

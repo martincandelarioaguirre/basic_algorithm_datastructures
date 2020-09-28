@@ -8,9 +8,9 @@ namespace logical_exercise.DataStructures {
         public int Data { set; get; }
     }
     class BinaryTree {
-        public Node Root { get; set; }
+        private Node Root { get; set; }
 
-        public bool Add (int value) {
+        private bool Add (int value) {
             Node before = null, after = this.Root;
 
             while (after != null) {
@@ -40,11 +40,11 @@ namespace logical_exercise.DataStructures {
             return true;
         }
 
-        public Node Find (int value) {
+        private Node Find (int value) {
             return this.Find (value, this.Root);
         }
 
-        public void Remove (int value) {
+        private void Remove (int value) {
             this.Root = Remove (this.Root, value);
         }
 
@@ -96,7 +96,7 @@ namespace logical_exercise.DataStructures {
             return null;
         }
 
-        public int GetTreeDepth () {
+        private int GetTreeDepth () {
             return this.GetTreeDepth (this.Root);
         }
 
@@ -126,6 +126,36 @@ namespace logical_exercise.DataStructures {
                 TraversePostOrder (parent.RightNode);
                 Console.Write (parent.Data + " ");
             }
+        }
+
+        public void Run () {
+            BinaryTree binaryTree = new BinaryTree ();
+            binaryTree.Add (1);
+            binaryTree.Add (2);
+            binaryTree.Add (7);
+            binaryTree.Add (3);
+            binaryTree.Add (10);
+            binaryTree.Add (5);
+            binaryTree.Add (8);
+
+            Node node = binaryTree.Find (5);
+            int depth = binaryTree.GetTreeDepth ();
+            ConsoleUtility.WriteLine (depth.ToString());
+
+            ConsoleUtility.WriteLine ("PreOrder Traversal:");
+            binaryTree.TraversePreOrder (binaryTree.Root);
+
+            ConsoleUtility.WriteLine ("InOrder Traversal:");
+            binaryTree.TraverseInOrder (binaryTree.Root);
+
+            ConsoleUtility.WriteLine ("PostOrder Traversal:");
+            binaryTree.TraversePostOrder (binaryTree.Root);
+
+            binaryTree.Remove (7);
+            binaryTree.Remove (8);
+
+            ConsoleUtility.WriteLine ("PreOrder Traversal After Removing Operation:");
+            binaryTree.TraversePreOrder (binaryTree.Root);
         }
     }
 }

@@ -160,5 +160,30 @@ namespace logical_exercise.DataStructures
             return count;
         }
 
+        public void Run() {
+            LinkedList<int> linkedList = new LinkedList<int>();
+            linkedList.InsertFirst(5);
+            linkedList.InsertFirst(4);
+            linkedList.InsertFirst(3);
+            linkedList.InsertFirst(2);
+            linkedList.InsertFirst(1);
+            linkedList.printAllNodes();
+            linkedList.InsertTop(1);
+            linkedList.InsertTop(2);
+            linkedList.InsertTop(3);
+            linkedList.InsertTop(4);
+            linkedList.InsertTop(5);
+            linkedList.printAllNodes();
+            linkedList.ReverseLinkedList();
+            linkedList.printAllNodes();
+            ConsoleUtility.WriteLine($"Data {linkedList.ExistValue(4)}");
+            linkedList.DeleteNodeByKey(4);
+            ConsoleUtility.WriteLine($"Data {linkedList.ExistValue(4)}");
+            linkedList.printAllNodes();
+            linkedList.InsertTop(10);
+            linkedList.printAllNodes();
+            ConsoleUtility.WriteLine($"Total of elements of the linked list {linkedList.GetCount()}");
+        }
+
     }
 }
