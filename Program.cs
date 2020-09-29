@@ -369,6 +369,8 @@ namespace logical_exercise
                         ConsoleUtility.WriteLine("1.-Abstract");
                         ConsoleUtility.WriteLine("2.-Action");
                         ConsoleUtility.WriteLine("3.-AsyncAwait");
+                        ConsoleUtility.WriteLine("4.-Delegate");
+                        ConsoleUtility.WriteLine("5.-Extensions");
                         i_option = Convert.ToInt32(Console.ReadLine());
                         switch (i_option)
                         {
@@ -386,6 +388,16 @@ namespace logical_exercise
                                 ConsoleUtility.WriteLine("Running example of AsyncAwait");
                                 AsyncAwait asyncAwait = new AsyncAwait();
                                 asyncAwait.Run();
+                                break;
+                            case 4:
+                                ConsoleUtility.WriteLine("Running example of Delegate");
+                                Number number = new Number();
+                                number.Run();
+                                break;
+                            case 5:
+                                ConsoleUtility.WriteLine("Running example of Extensions");
+                                IntExtensions intExtensions = new IntExtensions();
+                                intExtensions.Run();
                                 break;
                             default:
                                 break;
