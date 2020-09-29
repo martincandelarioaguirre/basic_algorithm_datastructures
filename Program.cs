@@ -6,11 +6,12 @@ using DesignPatterns.Structural;
 using logical_exercise.Algorithm;
 using logical_exercise.DataStructures;
 using logical_exercise.DataStructuresBook;
+using logical_exercise.LanguageDotNet;
 
 namespace logical_exercise {
     public class Program {
         public static void Main (string[] args) {
-            
+
             int option = 1;
             int i_option = 1;
             int ii_option = 1;
@@ -21,6 +22,7 @@ namespace logical_exercise {
                 ConsoleUtility.WriteLine ("1.-Algorithm");
                 ConsoleUtility.WriteLine ("2.-DataStructures");
                 ConsoleUtility.WriteLine ("3.-Design Patterns");
+                ConsoleUtility.WriteLine("4.-Language DotNet");
                 option = Convert.ToInt32 (Console.ReadLine ());
                 switch (option) {
                     case 1:
@@ -37,6 +39,7 @@ namespace logical_exercise {
                         ConsoleUtility.WriteLine ("10.-Merge Sort");
                         ConsoleUtility.WriteLine ("11.-Quick Sort");
                         ConsoleUtility.WriteLine ("12.-Select Sort");
+                        ConsoleUtility.WriteLine ("13.-Binary Search");
                         i_option = Convert.ToInt32 (Console.ReadLine ());
                         switch (i_option) {
                             case 1:
@@ -98,6 +101,11 @@ namespace logical_exercise {
                                 ConsoleUtility.WriteLine ("Running example of Select Sort");
                                 SelectSort selectSort = new SelectSort ();
                                 selectSort.Run ();
+                                break;
+                            case 13:
+                                ConsoleUtility.WriteLine("Running example of Binary Search");
+                                BinarySearch binarySearch = new BinarySearch();
+                                binarySearch.Run();
                                 break;
                             default:
                                 break;
@@ -340,6 +348,27 @@ namespace logical_exercise {
                                     default:
                                         break;
                                 }
+                                break;
+                            default:
+                                break;
+                        }
+                        break;
+                    case 4:
+                        ConsoleUtility.WriteLine("Language DotNet");
+                        ConsoleUtility.WriteLine("1.-Abstract");
+                        ConsoleUtility.WriteLine("2.-Action");
+                        i_option = Convert.ToInt32(Console.ReadLine());
+                        switch (i_option)
+                        {
+                            case 1:
+                                ConsoleUtility.WriteLine("Running example of Abstract Class");
+                                Square square = new Square();
+                                square.Run();
+                                break;
+                            case 2:
+                                ConsoleUtility.WriteLine("Running example of Action");
+                                LanguageDotNet.Action action = new LanguageDotNet.Action();
+                                action.Run();
                                 break;
                             default:
                                 break;

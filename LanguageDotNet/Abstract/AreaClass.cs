@@ -1,6 +1,6 @@
 using System;
 
-namespace logical_exercise.LanguageDotNet.Abstract
+namespace logical_exercise.LanguageDotNet
 {
     public abstract class AreaClass {
         abstract public int Area();
@@ -15,6 +15,10 @@ namespace logical_exercise.LanguageDotNet.Abstract
         public Square(int n)
         {
             side = n;
+        }
+        
+        public Square()
+        {
         }
 
         public override int Area()
