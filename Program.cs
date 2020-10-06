@@ -371,6 +371,12 @@ namespace logical_exercise
                         ConsoleUtility.WriteLine("3.-AsyncAwait");
                         ConsoleUtility.WriteLine("4.-Delegate");
                         ConsoleUtility.WriteLine("5.-Extensions");
+                        ConsoleUtility.WriteLine("6.-Func");
+                        ConsoleUtility.WriteLine("7.-Generics");
+                        ConsoleUtility.WriteLine("8.-Predicate");
+                        ConsoleUtility.WriteLine("9.-Lock");
+                        ConsoleUtility.WriteLine("10.-Reflection");
+                        ConsoleUtility.WriteLine("11.-IOC Implementation");
                         i_option = Convert.ToInt32(Console.ReadLine());
                         switch (i_option)
                         {
@@ -381,8 +387,8 @@ namespace logical_exercise
                                 break;
                             case 2:
                                 ConsoleUtility.WriteLine("Running example of Action");
-                                LanguageDotNet.Action action = new LanguageDotNet.Action();
-                                action.Run();
+                                // LanguageDotNet.Action action = new LanguageDotNet.Action();
+                                // action.Run();
                                 break;
                             case 3:
                                 ConsoleUtility.WriteLine("Running example of AsyncAwait");
@@ -398,6 +404,35 @@ namespace logical_exercise
                                 ConsoleUtility.WriteLine("Running example of Extensions");
                                 IntExtensions intExtensions = new IntExtensions();
                                 intExtensions.Run();
+                                break;
+                            case 6:
+                                ConsoleUtility.WriteLine("Running example of Func");
+                                Func func = new Func();
+                                func.Run();
+                                break;
+                            case 7:
+                                ConsoleUtility.WriteLine("Running example of Generics");
+                                Generic generic = new Generic();
+                                generic.Run();
+                                break;
+                            case 8:
+                                ConsoleUtility.WriteLine("Running example of Predicate");
+                                Predicate predicate = new Predicate();
+                                predicate.Run();
+                                break;
+                            case 9:
+                                ConsoleUtility.WriteLine("Running example of Lock");
+                                LockTest lockTest = new LockTest();
+                                lockTest.runTest();
+                                break;
+                            case 10:
+                                ConsoleUtility.WriteLine("Running example of Reflection");
+                                Customer customer = new Customer();
+                                customer.Run();
+                                break;
+                            case 11:
+                                ConsoleUtility.WriteLine("Running example of IOC Implementation");
+                                IOCImplementation.Run();
                                 break;
                             default:
                                 break;
