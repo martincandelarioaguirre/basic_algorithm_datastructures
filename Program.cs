@@ -237,14 +237,17 @@ namespace logical_exercise
                                         prototype.Run();
                                         break;
                                     case 5:
+                                        ConsoleUtility.WriteLine("Running example of Fluent Interface Design Patter");
                                         FluentInterface fluent = new FluentInterface();
                                         fluent.Run();
                                         break;
                                     case 6:
+                                        ConsoleUtility.WriteLine("Running example of Factory Method Design Pattern");
                                         FactoryMethodTest factory = new FactoryMethodTest();
                                         factory.Run();
                                         break;
                                     case 7:
+                                        ConsoleUtility.WriteLine("Running example of Abstract Factory");
                                         AbstractFactoryTest abstractFactory = new AbstractFactoryTest();
                                         abstractFactory.Run();
                                         break;
@@ -265,30 +268,36 @@ namespace logical_exercise
                                 switch (ii_option)
                                 {
                                     case 1:
+                                        ConsoleUtility.WriteLine("Running example of Adapter");
                                         AdapterTest adapter = new AdapterTest();
                                         adapter.Run();
                                         break;
-                                    case 2:
+                                    case 2:ConsoleUtility.WriteLine("Running example of Facade");
                                         FacadeTest facade = new FacadeTest();
                                         facade.Run();
                                         break;
                                     case 3:
+                                        ConsoleUtility.WriteLine("Running example of Decorator");
                                         DecoratorTest decorator = new DecoratorTest();
                                         decorator.Run();
                                         break;
                                     case 4:
+                                        ConsoleUtility.WriteLine("Running example of Composite");
                                         CompositeTest composite = new CompositeTest();
                                         composite.Run();
                                         break;
                                     case 5:
+                                        ConsoleUtility.WriteLine("Running example of Proxy");
                                         ProxyTest proxy = new ProxyTest();
                                         proxy.Run();
                                         break;
                                     case 6:
+                                        ConsoleUtility.WriteLine("Running example of Flyweight");
                                         FlyweightTest flyweight = new FlyweightTest();
                                         flyweight.Run();
                                         break;
                                     case 7:
+                                        ConsoleUtility.WriteLine("Running example of Bridge");
                                         BridgeTest bridge = new BridgeTest();
                                         bridge.Run();
                                         break;
@@ -313,46 +322,57 @@ namespace logical_exercise
                                 switch (ii_option)
                                 {
                                     case 1:
+                                        ConsoleUtility.WriteLine("Running example of Change Of Responsability");
                                         ChainOfResponsability chain = new ChainOfResponsability();
                                         chain.Run();
                                         break;
                                     case 2:
+                                        ConsoleUtility.WriteLine("Running example of Command");
                                         CommandTest command = new CommandTest();
                                         command.Run();
                                         break;
                                     case 3:
+                                        ConsoleUtility.WriteLine("Running example of Observer");
                                         ObserverTest observer = new ObserverTest();
                                         observer.Run();
                                         break;
                                     case 4:
+                                        ConsoleUtility.WriteLine("Running example of Iterator");
                                         IteratorTest iterator = new IteratorTest();
                                         iterator.Run();
                                         break;
                                     case 5:
+                                        ConsoleUtility.WriteLine("Running example of State");
                                         StateTest state = new StateTest();
                                         state.Run();
                                         break;
                                     case 6:
+                                        ConsoleUtility.WriteLine("Running example of Template Method");
                                         TemplateMehodTest templateMehod = new TemplateMehodTest();
                                         templateMehod.Run();
                                         break;
                                     case 7:
+                                        ConsoleUtility.WriteLine("Running example of Visitor");
                                         VisitorTest visitor = new VisitorTest();
                                         visitor.Run();
                                         break;
                                     case 8:
+                                        ConsoleUtility.WriteLine("Running example of stratgegy");
                                         StrategyTest strategy = new StrategyTest();
                                         strategy.Run();
                                         break;
                                     case 9:
+                                        ConsoleUtility.WriteLine("Running example of Mediator");
                                         MediatorTest mediator = new MediatorTest();
                                         mediator.Run();
                                         break;
                                     case 10:
+                                        ConsoleUtility.WriteLine("Running example of Memento");
                                         MementoTest memento = new MementoTest();
                                         memento.Run();
                                         break;
                                     case 11:
+                                        ConsoleUtility.WriteLine("Running example of Interpreter");
                                         InterpreterTest interpreter = new InterpreterTest();
                                         interpreter.Run();
                                         break;
