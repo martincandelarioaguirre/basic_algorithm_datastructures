@@ -45,6 +45,8 @@ namespace logical_exercise
                         ConsoleUtility.WriteLine("11.-Quick Sort");
                         ConsoleUtility.WriteLine("12.-Select Sort");
                         ConsoleUtility.WriteLine("13.-Binary Search");
+                        ConsoleUtility.WriteLine("14.-Fibonnacci");
+                        ConsoleUtility.WriteLine("15.-Fibonacci with Memoization");
                         i_option = Convert.ToInt32(Console.ReadLine());
                         switch (i_option)
                         {
@@ -112,6 +114,16 @@ namespace logical_exercise
                                 ConsoleUtility.WriteLine("Running example of Binary Search");
                                 BinarySearch binarySearch = new BinarySearch();
                                 binarySearch.Run();
+                                break;
+                            case 14:
+                                ConsoleUtility.WriteLine("Running example of Fibonnacci");
+                                Fibonnacci fibonnacci = new Fibonnacci();
+                                fibonnacci.Run();
+                                break;
+                            case 15:
+                                ConsoleUtility.WriteLine("Running example of Fibonnaci with Memoization");
+                                FibonacciMemoization fibonacciMemoization = new FibonacciMemoization();
+                                fibonacciMemoization.Run();
                                 break;
                             default:
                                 break;
