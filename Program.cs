@@ -3,10 +3,12 @@ using Data;
 using DesignPatterns.Behavioral;
 using DesignPatterns.Creational;
 using DesignPatterns.Structural;
+using DesignPatterns.SOLID.SRP;
 using logical_exercise.Algorithm;
 using logical_exercise.DataStructures;
 using logical_exercise.DataStructuresBook;
 using logical_exercise.LanguageDotNet;
+using Invoice = DesignPatterns.SOLID.SRP.Invoice;
 
 namespace logical_exercise
 {
@@ -210,6 +212,7 @@ namespace logical_exercise
                         ConsoleUtility.WriteLine("1.-Creational");
                         ConsoleUtility.WriteLine("2.-Structural");
                         ConsoleUtility.WriteLine("3.-Behavioral");
+                        ConsoleUtility.WriteLine("4.-SOLID Principles");
 
                         i_option = Convert.ToInt32(Console.ReadLine());
                         ConsoleUtility.WriteLine($"you choose option {i_option}");
@@ -389,6 +392,18 @@ namespace logical_exercise
                                         interpreter.Run();
                                         break;
                                     default:
+                                        break;
+                                }
+                                break;
+                            case 4:
+                                ConsoleUtility.WriteLine("Example of SOLID Principles");
+                                ConsoleUtility.WriteLine("1.-Single Responsibility Principle");
+                                ii_option = Convert.ToInt32(Console.ReadLine());
+                                switch(ii_option){
+                                    case 1:
+                                        ConsoleUtility.WriteLine("Running example of Single Responsibility");
+                                        Invoice invoice = new Invoice();
+                                        invoice.Run();
                                         break;
                                 }
                                 break;
