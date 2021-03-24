@@ -3,10 +3,10 @@ using Data;
 using DesignPatterns.Behavioral;
 using DesignPatterns.Creational;
 using DesignPatterns.Structural;
-using DesignPatterns.SOLID.SRP;
 using logical_exercise.Algorithm;
 using logical_exercise.DataStructures;
 using logical_exercise.DataStructuresBook;
+using DesignPatterns.SOLID.OCP;
 using logical_exercise.LanguageDotNet;
 using Invoice = DesignPatterns.SOLID.SRP.Invoice;
 
@@ -398,12 +398,18 @@ namespace logical_exercise
                             case 4:
                                 ConsoleUtility.WriteLine("Example of SOLID Principles");
                                 ConsoleUtility.WriteLine("1.-Single Responsibility Principle");
+                                ConsoleUtility.WriteLine("2.-Open-Closed Principle");
                                 ii_option = Convert.ToInt32(Console.ReadLine());
                                 switch(ii_option){
                                     case 1:
                                         ConsoleUtility.WriteLine("Running example of Single Responsibility");
                                         Invoice invoice = new Invoice();
                                         invoice.Run();
+                                        break;
+                                    case 2:
+                                        ConsoleUtility.WriteLine("Running example of Open-Closed Principle");
+                                        InvoiceOCP invoiceOCP = new InvoiceOCP();
+                                        invoiceOCP.Run();
                                         break;
                                 }
                                 break;
