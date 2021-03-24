@@ -7,6 +7,7 @@ using logical_exercise.Algorithm;
 using logical_exercise.DataStructures;
 using logical_exercise.DataStructuresBook;
 using DesignPatterns.SOLID.OCP;
+using DesignPatterns.SOLID.LSP;
 using logical_exercise.LanguageDotNet;
 using Invoice = DesignPatterns.SOLID.SRP.Invoice;
 
@@ -399,6 +400,7 @@ namespace logical_exercise
                                 ConsoleUtility.WriteLine("Example of SOLID Principles");
                                 ConsoleUtility.WriteLine("1.-Single Responsibility Principle");
                                 ConsoleUtility.WriteLine("2.-Open-Closed Principle");
+                                ConsoleUtility.WriteLine("3.-Liskov Substitution Principle");
                                 ii_option = Convert.ToInt32(Console.ReadLine());
                                 switch(ii_option){
                                     case 1:
@@ -410,6 +412,11 @@ namespace logical_exercise
                                         ConsoleUtility.WriteLine("Running example of Open-Closed Principle");
                                         InvoiceOCP invoiceOCP = new InvoiceOCP();
                                         invoiceOCP.Run();
+                                        break;
+                                    case 3:
+                                        ConsoleUtility.WriteLine("Running example of Liskov Principle");
+                                        RunFruit run = new RunFruit();
+                                        run.Run();
                                         break;
                                 }
                                 break;
