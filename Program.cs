@@ -8,6 +8,7 @@ using logical_exercise.DataStructures;
 using logical_exercise.DataStructuresBook;
 using DesignPatterns.SOLID.OCP;
 using DesignPatterns.SOLID.LSP;
+using DesignPatterns.SOLID.ISP;
 using logical_exercise.LanguageDotNet;
 using Invoice = DesignPatterns.SOLID.SRP.Invoice;
 
@@ -401,6 +402,7 @@ namespace logical_exercise
                                 ConsoleUtility.WriteLine("1.-Single Responsibility Principle");
                                 ConsoleUtility.WriteLine("2.-Open-Closed Principle");
                                 ConsoleUtility.WriteLine("3.-Liskov Substitution Principle");
+                                ConsoleUtility.WriteLine("4.-Interface Segregation Principle");
                                 ii_option = Convert.ToInt32(Console.ReadLine());
                                 switch(ii_option){
                                     case 1:
@@ -417,6 +419,11 @@ namespace logical_exercise
                                         ConsoleUtility.WriteLine("Running example of Liskov Principle");
                                         RunFruit run = new RunFruit();
                                         run.Run();
+                                        break;
+                                    case 4:
+                                        ConsoleUtility.WriteLine("Running example of Interface Segregation Principle");
+                                        Printer printer = new Printer();
+                                        printer.Run();
                                         break;
                                 }
                                 break;
