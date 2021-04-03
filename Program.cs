@@ -11,6 +11,7 @@ using DesignPatterns.SOLID.LSP;
 using DesignPatterns.SOLID.ISP;
 using logical_exercise.LanguageDotNet;
 using Invoice = DesignPatterns.SOLID.SRP.Invoice;
+using DesignPatterns.SOLID.DIP;
 
 namespace logical_exercise
 {
@@ -289,7 +290,8 @@ namespace logical_exercise
                                         AdapterTest adapter = new AdapterTest();
                                         adapter.Run();
                                         break;
-                                    case 2:ConsoleUtility.WriteLine("Running example of Facade");
+                                    case 2:
+                                        ConsoleUtility.WriteLine("Running example of Facade");
                                         FacadeTest facade = new FacadeTest();
                                         facade.Run();
                                         break;
@@ -403,8 +405,10 @@ namespace logical_exercise
                                 ConsoleUtility.WriteLine("2.-Open-Closed Principle");
                                 ConsoleUtility.WriteLine("3.-Liskov Substitution Principle");
                                 ConsoleUtility.WriteLine("4.-Interface Segregation Principle");
+                                ConsoleUtility.WriteLine("5.-Dependency Inversion Principle");
                                 ii_option = Convert.ToInt32(Console.ReadLine());
-                                switch(ii_option){
+                                switch (ii_option)
+                                {
                                     case 1:
                                         ConsoleUtility.WriteLine("Running example of Single Responsibility");
                                         Invoice invoice = new Invoice();
@@ -424,6 +428,11 @@ namespace logical_exercise
                                         ConsoleUtility.WriteLine("Running example of Interface Segregation Principle");
                                         Printer printer = new Printer();
                                         printer.Run();
+                                        break;
+                                    case 5:
+                                        ConsoleUtility.WriteLine("Running example of Dependency Inversion Principle");
+                                        RunDIP runDIP = new RunDIP();
+                                        runDIP.Run();
                                         break;
                                 }
                                 break;
