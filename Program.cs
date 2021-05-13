@@ -12,6 +12,7 @@ using DesignPatterns.SOLID.ISP;
 using logical_exercise.LanguageDotNet;
 using Invoice = DesignPatterns.SOLID.SRP.Invoice;
 using DesignPatterns.SOLID.DIP;
+using logical_exercise.LanguageDotNet.TasksExample;
 
 namespace logical_exercise
 {
@@ -453,6 +454,7 @@ namespace logical_exercise
                         ConsoleUtility.WriteLine("9.-Lock");
                         ConsoleUtility.WriteLine("10.-Reflection");
                         ConsoleUtility.WriteLine("11.-IOC Implementation");
+                        ConsoleUtility.WriteLine("12.-Task");
                         i_option = Convert.ToInt32(Console.ReadLine());
                         switch (i_option)
                         {
@@ -509,6 +511,11 @@ namespace logical_exercise
                             case 11:
                                 ConsoleUtility.WriteLine("Running example of IOC Implementation");
                                 IOCImplementation.Run();
+                                break;
+                            case 12:
+                                ConsoleUtility.WriteLine("Running example of Tasks");
+                                TaskReturnValue taskReturnValue = new TaskReturnValue();
+                                taskReturnValue.Run();
                                 break;
                             default:
                                 break;
