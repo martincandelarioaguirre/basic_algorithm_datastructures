@@ -13,6 +13,8 @@ using logical_exercise.LanguageDotNet;
 using Invoice = DesignPatterns.SOLID.SRP.Invoice;
 using DesignPatterns.SOLID.DIP;
 using logical_exercise.LanguageDotNet.TasksExample;
+using logical_exercise.LanguageDotNet.Out;
+using logical_exercise.LanguageDotNet.PatternMatching;
 
 namespace logical_exercise
 {
@@ -455,6 +457,8 @@ namespace logical_exercise
                         ConsoleUtility.WriteLine("10.-Reflection");
                         ConsoleUtility.WriteLine("11.-IOC Implementation");
                         ConsoleUtility.WriteLine("12.-Task");
+                        ConsoleUtility.WriteLine("13.-Out Variable");
+                        ConsoleUtility.WriteLine("14.-Pattern Matching");
                         i_option = Convert.ToInt32(Console.ReadLine());
                         switch (i_option)
                         {
@@ -465,8 +469,8 @@ namespace logical_exercise
                                 break;
                             case 2:
                                 ConsoleUtility.WriteLine("Running example of Action");
-                                // LanguageDotNet.Action action = new LanguageDotNet.Action();
-                                // action.Run();
+                                LanguageDotNet.Action action = new LanguageDotNet.Action();
+                                action.Run();
                                 break;
                             case 3:
                                 ConsoleUtility.WriteLine("Running example of AsyncAwait");
@@ -516,6 +520,16 @@ namespace logical_exercise
                                 ConsoleUtility.WriteLine("Running example of Tasks");
                                 TaskReturnValue taskReturnValue = new TaskReturnValue();
                                 taskReturnValue.Run();
+                                break;
+                            case 13:
+                                ConsoleUtility.WriteLine("Running example of Out variable");
+                                OutVariables outVariables = new OutVariables();
+                                outVariables.Run();
+                                break;
+                            case 14:
+                                ConsoleUtility.WriteLine("Running example of Pattern Matching");
+                                PatternMatching patternMatching = new PatternMatching();
+                                patternMatching.Run();
                                 break;
                             default:
                                 break;
