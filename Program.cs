@@ -15,6 +15,8 @@ using DesignPatterns.SOLID.DIP;
 using logical_exercise.LanguageDotNet.TasksExample;
 using logical_exercise.LanguageDotNet.Out;
 using logical_exercise.LanguageDotNet.PatternMatching;
+using logical_exercise.LanguageDotNet.Digit;
+using logical_exercise.LanguageDotNet.Tuples;
 
 namespace logical_exercise
 {
@@ -459,6 +461,8 @@ namespace logical_exercise
                         ConsoleUtility.WriteLine("12.-Task");
                         ConsoleUtility.WriteLine("13.-Out Variable");
                         ConsoleUtility.WriteLine("14.-Pattern Matching");
+                        ConsoleUtility.WriteLine("15.-Digit Separator");
+                        ConsoleUtility.WriteLine("16.-Tuples");
                         i_option = Convert.ToInt32(Console.ReadLine());
                         switch (i_option)
                         {
@@ -530,6 +534,16 @@ namespace logical_exercise
                                 ConsoleUtility.WriteLine("Running example of Pattern Matching");
                                 PatternMatching patternMatching = new PatternMatching();
                                 patternMatching.Run();
+                                break;
+                            case 15:
+                                ConsoleUtility.WriteLine("Running example of Digit Separators");
+                                DigitSeparator digitSeparator = new DigitSeparator();
+                                digitSeparator.Run();
+                                break;
+                            case 16:
+                                ConsoleUtility.WriteLine("Running example of Tuple");
+                                Tuples tuples = new Tuples();
+                                tuples.Run();
                                 break;
                             default:
                                 break;
