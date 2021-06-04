@@ -17,6 +17,8 @@ using logical_exercise.LanguageDotNet.Out;
 using logical_exercise.LanguageDotNet.PatternMatching;
 using logical_exercise.LanguageDotNet.Digit;
 using logical_exercise.LanguageDotNet.Tuples;
+using logical_exercise.LanguageDotNet.RefLocalsRefReturns;
+using logical_exercise.LanguageDotNet.AsyncReturnTypes;
 
 namespace logical_exercise
 {
@@ -463,6 +465,8 @@ namespace logical_exercise
                         ConsoleUtility.WriteLine("14.-Pattern Matching");
                         ConsoleUtility.WriteLine("15.-Digit Separator");
                         ConsoleUtility.WriteLine("16.-Tuples");
+                        ConsoleUtility.WriteLine("17.-Ref locals and ref return");
+                        ConsoleUtility.WriteLine("18.-AsynReturn");
                         i_option = Convert.ToInt32(Console.ReadLine());
                         switch (i_option)
                         {
@@ -544,6 +548,16 @@ namespace logical_exercise
                                 ConsoleUtility.WriteLine("Running example of Tuple");
                                 Tuples tuples = new Tuples();
                                 tuples.Run();
+                                break;
+                            case 17:
+                                ConsoleUtility.WriteLine("Running example of Ref locals and ref returns");
+                                RefLocalRefReturn refLocalRefReturn = new RefLocalRefReturn();
+                                refLocalRefReturn.Run();
+                                break;
+                            case 18:
+                                ConsoleUtility.WriteLine("Running example of AsyncReturn");
+                                AsyncReturn asyncReturn = new AsyncReturn();
+                                asyncReturn.Run();
                                 break;
                             default:
                                 break;
