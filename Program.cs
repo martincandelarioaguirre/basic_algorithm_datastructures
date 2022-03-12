@@ -19,6 +19,7 @@ using logical_exercise.LanguageDotNet.Digit;
 using logical_exercise.LanguageDotNet.Tuples;
 using logical_exercise.LanguageDotNet.RefLocalsRefReturns;
 using logical_exercise.LanguageDotNet.AsyncReturnTypes;
+using logical_exercise.LogicalExercise.OrderAList;
 
 namespace logical_exercise
 {
@@ -39,6 +40,7 @@ namespace logical_exercise
                 ConsoleUtility.WriteLine("2.-DataStructures");
                 ConsoleUtility.WriteLine("3.-Design Patterns");
                 ConsoleUtility.WriteLine("4.-Language DotNet");
+                ConsoleUtility.WriteLine("5.-Logical Exercise");
                 option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -566,6 +568,27 @@ namespace logical_exercise
                     default:
                         ConsoleUtility.WriteLine("Exit");
                         break;
+
+                    case 5:
+                        ConsoleUtility.WriteLine("Logical Exercise");
+                        ConsoleUtility.WriteLine("1.-Order a List with Delegate");
+                        ConsoleUtility.WriteLine("2.-Order a List with Lambda");
+
+                        i_option = Convert.ToInt32(Console.ReadLine());
+                        switch (i_option)
+                        {
+                            case 1:
+                                WithDelegate withDelegate = new WithDelegate();
+                                withDelegate.Run();
+                                break;
+                            case 2:
+                                WithLambda withLambda = new WithLambda();
+                                withLambda.Run();
+                                break;
+                        }
+                        break;
+
+                      
                 }
 
             }
